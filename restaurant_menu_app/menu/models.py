@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 
 
 class Restaurant(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='restaurants')
     name = models.CharField(max_length=100)
     address = models.CharField(max_length=255)
     phone = models.CharField(max_length=20)
